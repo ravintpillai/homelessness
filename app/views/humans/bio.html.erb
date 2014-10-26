@@ -1,0 +1,3 @@
+<h1 class="bio"><%= @human.first_name.capitalize %></h1>
+  <p class="bio"><%= @human.article.gsub("\n\n","<br/><br/>").html_safe %></p>
+

@@ -16,4 +16,21 @@
 
  .rig{
     list-style-type: none;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .subtext{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+
+  .new_human{
+    float: left;
+    font-family: 'Raleway'
+  }
+
+  .bio{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
   }

@@ -1,0 +1,20 @@
+<p>Publish a New Human Story</p>
+
+  <%= form_for @human do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+    <br>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+    <br>
+    <%= f.label :url %>
+    <%= f.text_field :url %>
+    <br>
+    <%= f.label :article %>
+    <%= f.text_field :article %>
+    <br>
+    <%= submit_tag 'publish'  %>
+  <%end%>
+
+
+
