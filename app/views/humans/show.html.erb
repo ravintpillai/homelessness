@@ -1,0 +1,10 @@
+<% @humans.each do |human| %>
+  <ul class="rig">
+    <li>
+      <div class="video">
+        <iframe width="420" height="315" src= <%= human.url %> frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p class="subtext"><%= "#{human.first_name} #{human.last_name}"%></p>
+    </li>
+  </ul>
+<% end %>
