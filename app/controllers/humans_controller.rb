@@ -25,8 +25,8 @@ class HumansController < ApplicationController
 
   private
     def safe_human
-      parans[:first_name]=params[:first_name].downcase
-      parans[:last_name]=params[:last_name].downcase
+      params[:human][:first_name]=params[:human][:first_name].downcase
+      params[:human][:last_name]=params[:human][:last_name].downcase
       params.require('human').permit(:first_name, :last_name, :url, :article)
     end
 
