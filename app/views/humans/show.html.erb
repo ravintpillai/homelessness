@@ -1,9 +1,12 @@
 <% @humans.each do |human| %>
   <ul class="rig">
     <li>
-      <p class="subtext"><%= "#{human.first_name} #{human.last_name}"%></p>
-      <div class="video">
-        <iframe width="210" height="157" src= <%= human.url %> frameborder="0" allowfullscreen></iframe>
+      <div class="subtext">
+        <p><%= "#{human.first_name.capitalize} #{human.last_name.capitalize}"%></p>
+        <div class="video">
+          <iframe width="210" height="157" src= <%= human.url %> frameborder="0" allowfullscreen></iframe>
+        </div>
+        <%= link_to "Read More", "/humans/#{human.first_name}/#{human.last_name}/#{human.id}", :class =>"bio"%>
       </div>
     </li>
   </ul>
