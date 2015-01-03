@@ -31,7 +31,6 @@ gem 'spring',        group: :development
 gem 'devise'
 # Use unicorn as the app server
 # gem 'unicorn'
-gem 'execjs'
 gem 'therubyracer'
 
 # Use Capistrano for deployment
