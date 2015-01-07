@@ -11,14 +11,15 @@
     </li>
   </ul>
 <% end %>
-
-<form action=<%="/?"+ "charity="+@charity.id.to_s %> method="POST" id="pay">
-  <script
-    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-    data-key="pk_test_n9WqDHwMNc8QhhzI317cInuO"
-    data-amount="2000"
-    data-name="Demo Site"
-    data-description="2 widgets ($20.00)"
-    data-image="/assets/amelia.jpg">
-  </script>
-</form>
+<div class="wrapper">
+  <form action=<%="/?"+ "charity="+@charity.id.to_s %> method="POST" id="pay">
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_n9WqDHwMNc8QhhzI317cInuO"
+      data-amount="2000"
+      data-name="Demo Site"
+      data-description="2 widgets ($20.00)"
+      data-image="/assets/amelia.jpg">
+    </script>
+  </form>
+</div>
