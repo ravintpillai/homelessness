@@ -1,6 +1,8 @@
 class HumansController < ApplicationController
 
   def show
+    @charity = charity
+    puts "hi i am #{@charity.name}"
     @humans = Human.all
   end
 
@@ -28,6 +30,14 @@ class HumansController < ApplicationController
       params[:human][:first_name]=params[:human][:first_name].downcase
       params[:human][:last_name]=params[:human][:last_name].downcase
       params.require('human').permit(:first_name, :last_name, :url, :article)
+    end
+
+    def charity
+      begin
+        charity = Charity.find(params[:charity])
+      rescue
+        charity = Charity.find(1)
+      end
     end
 
 end

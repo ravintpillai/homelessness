@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'humans#show'
   resources :humans
   get 'humans/:first_name/:last_name/:id' => 'humans#bio'
+  match '/', to: 'donations#new', via: :post
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
