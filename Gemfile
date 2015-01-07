@@ -33,6 +33,8 @@ gem 'devise'
 # gem 'unicorn'
 gem 'therubyracer'
 
+gem 'foreigner'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
